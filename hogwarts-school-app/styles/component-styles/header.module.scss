@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.container {
+	background-color: $header-background;
+	padding: 1em;
+}
+.button {
+	background-color: $purple;
+	color: $white;
+	padding: 0.5em 0.5em;
+	border-radius: 10px;
+	text-align: center;
+}
+.button:hover {
+	background-color: $purple-hover;
+	transition: ease-in-out 0.2s;
+}
+
+.row {
+	margin-top: 5px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+.item_1 {
+	grid-column: span 4;
+}
+.item_2 {
+	grid-column: span 4;
+	text-align: center;
+}
+.item_3 {
+	grid-column: span 3;
+}
+
+.item_4 {
+	grid-column: span 1;
+}
+
+@media screen and (max-width: 576px) {
+	.button {
+		padding: 0.1em 0.1em;
+		display: flex;
+		align-items: center;
+	}
+}
