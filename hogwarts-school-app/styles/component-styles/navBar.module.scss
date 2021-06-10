@@ -3,6 +3,8 @@
 .navbar {
 	overflow: hidden;
 	background-color: $header-background;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 /* Links inside the navbar */
