@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Header from '../components/header'
 import IntroSection from '../components/introSection'
+import HousesGrid from '../components/home/housesgrid'
 
 export default function Home () {
   return (
@@ -21,7 +22,7 @@ export default function Home () {
         </div >
         <IntroSection />
         <hr className={styles.whiteLine} />
-        this is another line
+        <HousesGrid />
       </main >
     </div >
   )
