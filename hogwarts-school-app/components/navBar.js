@@ -20,7 +20,7 @@ class navBar extends React.Component {
 							<a>Gryffindor</a>
 						</Link>
 						<Link href="/hufflepuff">
-							<a>Hufflpuff</a>
+							<a>Hufflepuff</a>
 						</Link>
 						<Link href="/ravenclaw">
 							<a>RavenClaw</a>
