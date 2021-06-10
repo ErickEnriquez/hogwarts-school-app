@@ -3,6 +3,8 @@
 .container {
 	background-color: $header-background;
 	padding: 1em;
+	position: sticky;
+	top: 0;
 }
 .button {
 	background-color: $purple;
@@ -10,6 +12,8 @@
 	padding: 0.5em 0.5em;
 	border-radius: 10px;
 	text-align: center;
+	align-items: center;
+	display: flex;
 }
 .button:hover {
 	background-color: $purple-hover;
@@ -37,9 +41,18 @@
 }
 
 @media screen and (max-width: 576px) {
-	.button {
-		padding: 0.1em 0.1em;
-		display: flex;
-		align-items: center;
+	.item_1 {
+		grid-column: span 12;
+		text-align: center;
+	}
+	.item_2 {
+		grid-column: span 12;
+	}
+	.item_3 {
+		grid-column: span 12;
+	}
+	.item_4 {
+		grid-column: span 12;
+		text-align: center;
 	}
 }
