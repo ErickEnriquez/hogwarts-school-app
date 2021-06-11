@@ -3,8 +3,9 @@ import Link from 'next/link'
 import styles from '../../styles/Home.module.scss'
 
 export default function Card (props) {
+	
+	const link = props.link || `/${props.name}` 
 
-	const link = `/${props.name}`
 	const backgroundClass = styles[`${props.name}Background`]
 
 	return (
