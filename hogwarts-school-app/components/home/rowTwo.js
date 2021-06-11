@@ -1,14 +1,14 @@
 
 import styles from '../../styles/Home.module.scss'
-import Card from '../home/card'
+import Card from './Card'
 
 const data = [
-	'Muggle',
-	'Wizard',
-	'Alumni'
+	'muggle',
+	'wizard',
+	'alumni'
 ]
 
-const rowTwo = () => {
+const RowTwo = () => {
 
 	const cards = data.map(element => {
 		return (
@@ -28,6 +28,6 @@ const rowTwo = () => {
 	)
 }
 
-export default rowTwo
+export default RowTwo
 
 

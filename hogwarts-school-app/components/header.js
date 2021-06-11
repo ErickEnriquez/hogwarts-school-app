@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/component-styles/header.module.scss'
-import NavBar from '../components/navBar'
+import NavBar from './NavBar'
 import Image from 'next/image'
 
 

@@ -16,16 +16,16 @@ class navBar extends React.Component {
 					<button className={styles.dropbtn}>Our Houses
 					</button>
 					<div className={styles.dropdownContent}>
-						<Link href="/gryffindor">
+						<Link href="/houses/gryffindor">
 							<a>Gryffindor</a>
 						</Link>
-						<Link href="/hufflepuff">
+						<Link href="/houses/hufflepuff">
 							<a>Hufflepuff</a>
 						</Link>
-						<Link href="/ravenclaw">
+						<Link href="/houses/ravenclaw">
 							<a>RavenClaw</a>
 						</Link>
-						<Link href="/slytherin">
+						<Link href="/houses/slytherin">
 							<a>Slytherin</a>
 						</Link>
 					</div>

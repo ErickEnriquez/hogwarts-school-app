@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/Home.module.scss'
-import HouseCard from './card'
+import HouseCard from './Card'
 
 let houses = [
 	{ houseName: 'gryffindor' },
@@ -17,7 +17,7 @@ class HousesGrid extends React.Component {
 					key={index}
 					name={element.houseName}
 					image={`/images/${element.houseName}.png`}
-
+					link={`/houses/${element.houseName}`}
 				/>
 			)
 		})
