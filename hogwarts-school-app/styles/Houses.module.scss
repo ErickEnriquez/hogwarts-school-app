@@ -17,11 +17,18 @@
 	justify-content: center;
 	align-items: center;
 }
+.content {
+	text-align: center;
+}
 
 .title {
 	margin: 0;
 	font-size: 4rem;
 	text-transform: capitalize;
+}
+
+.motto {
+	font-size: 2em;
 }
 
 .grid {
