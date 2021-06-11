@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.container {
+	min-height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	//align-items: center;
+}
+
+.main {
+	padding: 5rem 0;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin: 0;
+	font-size: 4rem;
+	text-transform: capitalize;
+}
+
+.grid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//flex-wrap: wrap;
+	//max-width: 800px;
+	margin-top: 3rem;
+	width: 80%;
+}
+
+.gryffindorBackground {
+	background-color: $gryffindor-maroon;
+}
+.ravenclawBackground {
+	background-color: $ravenclaw-blue;
+}
+.hufflepuffBackground {
+	background-color: $hufflepuff-yellow;
+}
+.slytherinBackground {
+	background-color: $slytherin-green;
+}
+
+.logo {
+	height: 1em;
+	margin-left: 0.5rem;
+}
+
+.whiteLine {
+	border: 1px solid $white;
+	width: 60%;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
+}
