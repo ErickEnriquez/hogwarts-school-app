@@ -1,19 +1,12 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import Header from '../components/header'
-import IntroSection from '../components/introSection'
-import HousesGrid from '../components/home/housesgrid'
-import RowTwo from '../components/home/rowTwo'
+import IntroSection from '../components/IntroSection'
+import HousesGrid from '../components/home/HousesGrid'
+import RowTwo from '../components/home/RowTwo'
+import Layout from '../components/Layout'
 
 export default function Home () {
   return (
-    <div className={`${styles.container}`}>
-      <Head>
-        <title>Hogwarts School Brochure</title>
-        <meta name="Brochure APP" content="Created as brochure" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Header />
+    <Layout >
       <main className={styles.main}>
         <div className={styles.heroImage}>
           <h1 className={styles.title}>
@@ -27,7 +20,6 @@ export default function Home () {
         <hr className={styles.whiteLine} />
         <RowTwo />
       </main >
-    </div >
-    
+    </Layout >
   )
 }
