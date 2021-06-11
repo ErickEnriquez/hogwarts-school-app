@@ -105,3 +105,6 @@ dist
 
 #ignore DS Store on macOS
 .DS_Store
+
+#ignore .vscode configuration
+.vscode
