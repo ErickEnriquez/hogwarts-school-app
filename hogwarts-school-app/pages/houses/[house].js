@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../../styles/Houses.module.scss'
 import data from '../../../data/housesInfo'
 import { useEffect, useState } from 'react'
+import Traits from '../../components/houses/Traits'
 
 const House = () => {
 	const router = useRouter()
@@ -25,7 +26,7 @@ const House = () => {
 		<Layout>
 			{houseActive ? (
 				<main className={styles.container}>
-					<div>
+					<div className={styles.content}>
 						<h1 className={styles.title}>{houseActive.title}</h1>
 						<Image
 							src={houseActive.logo}
@@ -33,7 +34,8 @@ const House = () => {
 							width="400"
 							height="400"
 						/>
-						<p>motto {houseActive.motto}</p>
+						<p className={styles.motto}>Motto: <br />{houseActive.motto}</p>
+						<Traits />
 					</div>
 				</main>
 			) : null
