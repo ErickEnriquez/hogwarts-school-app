@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Layout from '../../components/Layout'
 import Image from 'next/image'
-import styles from '../../styles/Home.module.scss'
+import styles from '../../styles/Houses.module.scss'
 import data from '../../../data/housesInfo'
 import { useEffect, useState } from 'react'
 
@@ -12,7 +12,7 @@ const House = () => {
 	const [houseActive, setHouse] = useState(false)
 
 	const getHouseInfo = async () => {
-		//need to wait for data to be received from data object in data folder about houses
+		//need to wait for data to be received from "data" object in data folder about houses
 		const selectedHouse = await data.houses[house]
 		setHouse(selectedHouse)
 	}
@@ -23,20 +23,22 @@ const House = () => {
 
 	return (
 		<Layout>
-			<main className={styles.container}>
-				{houseActive ? (
-					<Image
-						src={houseActive.logo}
-						alt={`${house} logo`}
-						width="200"
-						height="200"
-					/>) :
-					null
-				}
-				<p>motto {houseActive.motto}</p>
-			</main>
+			{houseActive ? (
+				<main className={styles.container}>
+					<div>
+						<h1 className={styles.title}>{houseActive.title}</h1>
+						<Image
+							src={houseActive.logo}
+							alt={`${house} logo`}
+							width="400"
+							height="400"
+						/>
+						<p>motto {houseActive.motto}</p>
+					</div>
+				</main>
+			) : null
+			}
 		</Layout>
 	)
 }
-
 export default House
