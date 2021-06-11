@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from '../../styles/Home.module.scss'
-import HouseCard from '../home/houseCard'
+import HouseCard from './card'
 
 let houses = [
-	{ houseName: 'gryffindor', },
-	{ houseName: 'hufflepuff', },
-	{ houseName: 'ravenclaw', },
-	{ houseName: 'slytherin', }
+	{ houseName: 'gryffindor' },
+	{ houseName: 'hufflepuff' },
+	{ houseName: 'ravenclaw' },
+	{ houseName: 'slytherin' }
 ]
 class HousesGrid extends React.Component {
 	render () {
@@ -15,7 +15,9 @@ class HousesGrid extends React.Component {
 			return (
 				<HouseCard
 					key={index}
-					houseName={element.houseName}
+					name={element.houseName}
+					image={`/images/${element.houseName}.png`}
+
 				/>
 			)
 		})
