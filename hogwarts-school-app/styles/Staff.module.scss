@@ -1,0 +1,29 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.staffList{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	div{
+		margin-left: 5px;
+		margin-right: 5px;
+		img{
+			border-radius: 5px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) and (min-width:450px) {
+	.staffList{
+		grid-template-columns: 2fr 2fr;
+	}
+}
+
+@media (max-width:300) {
+	.staffList{
+		grid-template-columns: 1fr;
+	}
+}
