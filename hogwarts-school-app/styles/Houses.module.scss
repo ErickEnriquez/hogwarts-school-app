@@ -39,6 +39,28 @@
 	}
 }
 
+.bio{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+
+.bioPara{
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.notableCharacters{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	div{
+		margin-left: 5px;
+		margin-right: 5px;
+
+	}
+}
 
 
 .gryffindorBackground {
@@ -63,6 +85,12 @@
 @media (max-width: 600px) {
 	.grid {
 		width: 100%;
+		flex-direction: column;
+	}
+	.bio{
+		grid-template-columns: 1fr;
+	}
+	.traitList{
 		flex-direction: column;
 	}
 }
