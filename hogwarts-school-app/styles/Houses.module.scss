@@ -31,15 +31,15 @@
 	font-size: 2em;
 }
 
-.grid {
+.traitList {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	//flex-wrap: wrap;
-	//max-width: 800px;
-	margin-top: 3rem;
-	width: 80%;
+	justify-content: space-evenly;
+	span{
+		text-decoration: underline;
+	}
 }
+
+
 
 .gryffindorBackground {
 	background-color: $gryffindor-maroon;
@@ -54,10 +54,6 @@
 	background-color: $slytherin-green;
 }
 
-.logo {
-	height: 1em;
-	margin-left: 0.5rem;
-}
 
 .whiteLine {
 	border: 1px solid $white;

@@ -31,11 +31,13 @@ const House = () => {
 						<Image
 							src={houseActive.logo}
 							alt={`${house} logo`}
-							width="400"
-							height="400"
+							width="300"
+							height="300"
 						/>
 						<p className={styles.motto}>Motto: <br />{houseActive.motto}</p>
-						<Traits />
+						<Traits traits={houseActive.traits} />
+						<br />
+						<hr className={styles.whiteLine} />
 					</div>
 				</main>
 			) : null
